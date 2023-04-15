@@ -1,6 +1,6 @@
 var t = new Date()
-var timeNmt1= new Date(2023,6,5);
-var timeNmt2= new Date(2023,7,11);
+var timeNmt1= new Date(2023,5,5);
+var timeNmt2= new Date(2023,6,11);
 function timer1() {
     today = new Date();
     today = Math.floor((timeNmt1-today)/1000);
