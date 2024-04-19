@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "First Time Writing!";
+    src: url("https://db.onlinewebfonts.com/t/2a8195e7c274d417147ef3eaf6b94b88.eot");
+    src: url("https://db.onlinewebfonts.com/t/2a8195e7c274d417147ef3eaf6b94b88.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/2a8195e7c274d417147ef3eaf6b94b88.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/2a8195e7c274d417147ef3eaf6b94b88.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/2a8195e7c274d417147ef3eaf6b94b88.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/2a8195e7c274d417147ef3eaf6b94b88.svg#First Time Writing!")format("svg");
+}
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: black;
+    color: white;
+}
+
+/* logo */
+
+@keyframes logoanim {
+    0% {
+        transform: rotate(0.01turn);
+    }
+    50% {
+        transform: rotate(-0.01turn);
+    }
+    100% {
+        transform: rotate(0.01turn);
+    }
+}
+
+.header {
+    text-align: center;
+    font-family: "First Time Writing!";
+}
+
+.header h1 {
+    animation: logoanim 3s infinite ease-in-out;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.header h2 {
+    margin-top: 10px;
+}
+
+/* youtube */
+
+.content {
+    margin-top: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content iframe {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* buttons */
+
+@keyframes sizeplus {
+    0% {
+        font-size: 40px;
+    }
+    100% {
+        font-size: 45px;
+    }
+}
+
+@keyframes sizeminus {
+    0% {
+        font-size: 45px;
+    }
+    100% {
+        font-size: 40px;
+    }
+}
+
+.content .buttons {
+    display: flex;
+    justify-content: center;
+    
+    color: white;
+}
+
+.content .buttons .button {
+    background-color: black;
+    border: none;
+    font-size: 40px;
+    margin: 15px;
+    animation: sizeminus 0.3s ease-in-out;
+}
+
+.content .buttons .button p {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color:  white;
+}
+
+.content .buttons .button:hover {
+    animation: sizeplus 0.3s ease-in-out;
+    font-size: 45px;
+}
